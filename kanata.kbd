@@ -1,0 +1,15 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  caps
+)
+
+(deflayer base
+  @caps
+)
+
+(defalias
+  caps (tap-dance 200 (esc caps))
+)

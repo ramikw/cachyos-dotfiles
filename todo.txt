@@ -1,0 +1,23 @@
+On CachyOS hello, install gaming packages, check profile-sync-daemon
+
+1. sudo pacman -S yay
+2. yay -Syu
+3. yay -S --needed $(cat packages.txt)
+4. Sign in to 1Password and Brave browser (make sure to enable "Sync everything" in Brave)
+5. sudo npm install -g tree-sitter-cli
+6. git clone https://github.com/ramikw/neovim-config.git ~/.config/nvim
+7. ln -sf "$(pwd)/gitconfig" ~/.gitconfig
+8. Fix kanata:
+   - sudo usermod -aG input $USER (then re-login, needed for /dev/uinput access)
+   - sudo systemctl enable --now kanata (edit /etc/kanata.kbd or service config to point at "$(pwd)/kanata.kbd")
+
+Todo:
+3. How to disable startup time in boot manager
+4. vlc https://github.com/ramikw/NixOS/blob/main/home/vlc/default.nix
+5. https://github.com/ramikw/NixOS/blob/main/home/lazygit.nix
+6. https://github.com/ramikw/NixOS/blob/main/home/zsh.nix
+7. Learn shortcuts
+8. Show workspaces in bottom bar
+9. Make github repo for this
+10. https://github.com/ramikw/NixOS/blob/main/home/tmux.nix
+11. (chezmoi for: )
