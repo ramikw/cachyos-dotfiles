@@ -36,6 +36,8 @@
 Todo:
 1. Learn shortcuts (add to anki)
 2. Add shortcut to open browser and terminal, and file explorer
+3. Auto mount SSD and HDD
+4. Kanata not woring
 
 | Action | Shortcut |
 | --- | --- |
@@ -44,3 +46,4 @@ Todo:
 | Toggle/Maximize window | Meta+PgUp |
 | Minimize window | Meta+PgDown |
 | Tile window left/right/top/bottom | Meta+Left / Meta+Right / Meta+Up / Meta+Down |
+| Quick launcher (KRunner) | Alt+Space |
