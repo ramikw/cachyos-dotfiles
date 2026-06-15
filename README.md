@@ -38,6 +38,7 @@ Todo:
 2. Add shortcut to open browser and terminal, and file explorer
 3. Auto mount SSD and HDD
 4. Kanata not woring
+5. Enable HDR for all games
 
 | Action | Shortcut |
 | --- | --- |
