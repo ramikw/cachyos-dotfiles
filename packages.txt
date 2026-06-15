@@ -1,6 +1,5 @@
 1password
 anki
-kclock
 azure-cli
 brave
 claude-code
@@ -18,6 +17,7 @@ hunspell-en_us
 hunspell-nb
 jdk-openjdk
 kanata
+kclock
 lazygit
 libreoffice-fresh
 megasync-bin
@@ -26,6 +26,7 @@ netcoredbg
 nodejs
 npm
 nvim
+postman
 protols
 ripgrep
 roslyn-ls

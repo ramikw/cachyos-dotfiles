@@ -27,8 +27,16 @@
    - start tmux, then press prefix + I (capital i) to install the plugins (sensible, prefix-highlight, better-mouse-mode)
 15. Konsole: ln -sf "$(pwd)/konsole/konsolerc" ~/.config/konsolerc && mkdir -p ~/.local/share/konsole && ln -sf "$(pwd)/konsole/Profile 1.profile" ~/.local/share/konsole/"Profile 1.profile"
 16. Kate: ln -sf "$(pwd)/kate/katerc" ~/.config/katerc
+17. Change virtual desktop layout to two rows with two desktops each
 
 Todo:
 1. Learn shortcuts
-2. Show workspaces in bottom bar
-3. Font in console and text editor (make symlink from here)
+2. Fix sleep
+
+| Action | Shortcut |
+| --- | --- |
+| Switch to desktop (up/down/left/right) | Ctrl+Meta+Up / Ctrl+Meta+Down / Ctrl+Meta+Left / Ctrl+Meta+Right |
+| Move window to desktop (up/down/left/right) | Ctrl+Meta+Shift+Up / Ctrl+Meta+Shift+Down / Ctrl+Meta+Shift+Left / Ctrl+Meta+Shift+Right |
+| Maximize window | Meta+PgUp |
+| Minimize window | Meta+PgDown |
+| Tile window left/right/top/bottom | Meta+Left / Meta+Right / Meta+Up / Meta+Down |
