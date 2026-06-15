@@ -31,14 +31,16 @@
 18. Fix sleep (Gigabyte motherboard wakeup issue):
    - sudo ln -sf "$(pwd)/99-sleep-fix.rules" /etc/udev/rules.d/99-sleep-fix.rules && sudo udevadm control --reload
    - Add kernel param `acpi_osi="!Windows 2015"` to /etc/default/limine (KERNEL_CMDLINE), then sudo limine-update
+19. Brave: enable brave://flags/#middle-button-autoscroll for middle-click drag to scroll
 
 Todo:
-1. Learn shortcuts
+1. Learn shortcuts (add to anki)
+2. Add shortcut to open browser and terminal, and file explorer
 
 | Action | Shortcut |
 | --- | --- |
 | Switch to desktop (up/down/left/right) | Ctrl+Meta+Up / Ctrl+Meta+Down / Ctrl+Meta+Left / Ctrl+Meta+Right |
 | Move window to desktop (up/down/left/right) | Ctrl+Meta+Shift+Up / Ctrl+Meta+Shift+Down / Ctrl+Meta+Shift+Left / Ctrl+Meta+Shift+Right |
-| Maximize window | Meta+PgUp |
+| Toggle/Maximize window | Meta+PgUp |
 | Minimize window | Meta+PgDown |
 | Tile window left/right/top/bottom | Meta+Left / Meta+Right / Meta+Up / Meta+Down |
