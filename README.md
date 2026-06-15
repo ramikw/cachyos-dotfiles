@@ -28,10 +28,12 @@
 15. Konsole: ln -sf "$(pwd)/konsole/konsolerc" ~/.config/konsolerc && mkdir -p ~/.local/share/konsole && ln -sf "$(pwd)/konsole/Profile 1.profile" ~/.local/share/konsole/"Profile 1.profile"
 16. Kate: ln -sf "$(pwd)/kate/katerc" ~/.config/katerc
 17. Change virtual desktop layout to two rows with two desktops each
+18. Fix sleep (Gigabyte motherboard wakeup issue):
+   - sudo ln -sf "$(pwd)/99-sleep-fix.rules" /etc/udev/rules.d/99-sleep-fix.rules && sudo udevadm control --reload
+   - Add kernel param `acpi_osi="!Windows 2015"` to /etc/default/limine (KERNEL_CMDLINE), then sudo limine-update
 
 Todo:
 1. Learn shortcuts
-2. Fix sleep
 
 | Action | Shortcut |
 | --- | --- |
