@@ -39,3 +39,7 @@ unzip
 visual-studio-code-bin
 vlc
 wl-clipboard
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+zsh-theme-powerlevel10k
