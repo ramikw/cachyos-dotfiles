@@ -1,6 +1,6 @@
 1password
-tmux
 anki
+kclock
 azure-cli
 brave
 claude-code
@@ -30,10 +30,12 @@ protols
 ripgrep
 roslyn-ls
 rust
+rust-analyzer
 solaar
 sqlite
 sqlitebrowser
 thunderbird
+tmux
 tmuxinator
 ttf-hack-nerd
 unzip

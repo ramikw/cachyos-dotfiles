@@ -20,12 +20,15 @@
    - echo 'export ZDOTDIR="$HOME/.config/zsh"' > ~/.zshenv (so zsh reads .zshrc from ~/.config/zsh)
    - chsh -s $(which zsh) (make zsh the default shell)
    - restart shell and run `p10k configure` to generate ~/.config/zsh/.p10k.zsh
-
-TODO: i have not completed this one yet
 13. Edit /boot/limine.conf (sudo -E -s nvim /boot/limine.conf) and set `timeout: 0` at the top of the file to skip the boot menu delay (boots the default entry instantly).
+14. tmux:
+   - mkdir -p ~/.config/tmux && ln -sf "$(pwd)/tmux.conf" ~/.config/tmux/tmux.conf
+   - git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+   - start tmux, then press prefix + I (capital i) to install the plugins (sensible, prefix-highlight, better-mouse-mode)
+15. Konsole: ln -sf "$(pwd)/konsole/konsolerc" ~/.config/konsolerc && mkdir -p ~/.local/share/konsole && ln -sf "$(pwd)/konsole/Profile 1.profile" ~/.local/share/konsole/"Profile 1.profile"
+16. Kate: ln -sf "$(pwd)/kate/katerc" ~/.config/katerc
 
 Todo:
 1. Learn shortcuts
 2. Show workspaces in bottom bar
-3. https://github.com/ramikw/NixOS/blob/main/home/tmux.nix
-4. Font in console
+3. Font in console and text editor (make symlink from here)
