@@ -21,9 +21,11 @@
    - chsh -s $(which zsh) (make zsh the default shell)
    - restart shell and run `p10k configure` to generate ~/.config/zsh/.p10k.zsh
 
+TODO: i have not completed this one yet
+13. Edit /boot/limine.conf (sudo -E -s nvim /boot/limine.conf) and set `timeout: 0` at the top of the file to skip the boot menu delay (boots the default entry instantly).
+
 Todo:
-1. How to disable startup time in boot manager
-2. Learn shortcuts
-3. Show workspaces in bottom bar
-5. https://github.com/ramikw/NixOS/blob/main/home/tmux.nix
-6. Font in console
+1. Learn shortcuts
+2. Show workspaces in bottom bar
+3. https://github.com/ramikw/NixOS/blob/main/home/tmux.nix
+4. Font in console
