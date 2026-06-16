@@ -40,4 +40,8 @@ alias tx="tmuxinator"
 source $ZSH/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 [[ -f ~/.config/zsh/.p10k.zsh ]] && source ~/.config/zsh/.p10k.zsh
 
+# Keybindings
 bindkey '^ ' autosuggest-accept # ctrl + space
+
+# Environment variables
+export EDITOR="nvim"
