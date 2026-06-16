@@ -12,8 +12,8 @@ SAVEHIST=10000
 # Tmux auto-attach (must be set before oh-my-zsh's tmux plugin loads)
 ZSH_TMUX_AUTOSTART=true
 
-# Autosuggestions
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=244'
+# Autosuggestions: try history first, fall back to file path completion
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -35,7 +35,6 @@ source $ZSH/oh-my-zsh.sh
 alias update="yay -Syu"
 alias clean="yay -Sc"
 alias tx="tmuxinator"
-alias restart-hyprlock="hyprctl --instance 0 'dispatch exec hyprlock'"
 
 # Powerlevel10k prompt
 source $ZSH/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
