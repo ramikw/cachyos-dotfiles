@@ -6,9 +6,11 @@
 6. sudo npm install -g tree-sitter-cli
 7. git clone https://github.com/ramikw/neovim-config.git ~/.config/nvim
 8. ln -sf "$(pwd)/gitconfig" ~/.gitconfig
-9. Fix kanata:
-   - sudo usermod -aG input $USER (then re-login, needed for /dev/uinput access)
-   - sudo systemctl enable --now kanata (edit /etc/kanata.kbd or service config to point at "$(pwd)/kanata.kbd")
+9. Kanata:
+   - echo 'uinput' | sudo tee /etc/modules-load.d/uinput.conf  (load uinput module at boot)
+   - sudo modprobe uinput  (load it now without rebooting)
+   - sudo ln -sf "$(pwd)/kanata.kbd" /etc/xdg/kanata.kbd  (system service reads from here)
+   - sudo systemctl enable --now kanata
 10. vlc: mkdir -p ~/.config/vlc && cp -r "$(pwd)/vlc/." ~/.config/vlc/
 11. lazygit: mkdir -p ~/.config/lazygit && ln -sf "$(pwd)/lazygit.yml" ~/.config/lazygit/config.yml
 12. zsh:
@@ -31,13 +33,14 @@
 18. Fix sleep (Gigabyte motherboard wakeup issue):
    - sudo ln -sf "$(pwd)/99-sleep-fix.rules" /etc/udev/rules.d/99-sleep-fix.rules && sudo udevadm control --reload
    - Add kernel param `acpi_osi="!Windows 2015"` to /etc/default/limine (KERNEL_CMDLINE), then sudo limine-update
+19. Spectacle: ln -sf "$(pwd)/spectacle/spectaclerc" ~/.config/spectaclerc
+20. Keyboard shortcuts: ln -sf "$(pwd)/kglobalshortcuts/kglobalshortcutsrc" ~/.config/kglobalshortcutsrc
 19. Brave: enable brave://flags/#middle-button-autoscroll for middle-click drag to scroll
 
 Todo:
 1. Learn shortcuts (add to anki)
 2. Add shortcut to open browser and terminal, and file explorer
 3. Auto mount SSD and HDD
-4. Kanata not woring
 5. Enable HDR for all games
 
 | Action | Shortcut |
@@ -48,3 +51,4 @@ Todo:
 | Minimize window | Meta+PgDown |
 | Tile window left/right/top/bottom | Meta+Left / Meta+Right / Meta+Up / Meta+Down |
 | Quick launcher (KRunner) | Alt+Space |
+| Screenshot (rectangular region) | Print |
