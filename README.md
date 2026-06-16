@@ -49,7 +49,10 @@
 ## Other
 
 1. To auto mount disks, open KDE Partition Manager, right-click a partition → `Edit Mount Point`, set the path (e.g. `/mnt/ssd`), and save.
-1. For brainy development run this to setup tmux `mkdir -p ~/.config/tmuxinator && ln -sf "$(pwd)/tmuxinator/brainy.yml" ~/.config/tmuxinator/brainy.yml`
+2. For brainy development run this to setup tmux `mkdir -p ~/.config/tmuxinator && ln -sf "$(pwd)/tmuxinator/brainy.yml" ~/.config/tmuxinator/brainy.yml`
+
+## Laptop
+1. `Invert scroll direction (Natural scrolling)` in settings `Mouse & Touchpad`
 
 ### Gaming
 
