@@ -7,9 +7,9 @@
 7. git clone https://github.com/ramikw/neovim-config.git ~/.config/nvim
 8. ln -sf "$(pwd)/gitconfig" ~/.gitconfig
 9. Kanata:
-   - echo 'uinput' | sudo tee /etc/modules-load.d/uinput.conf  (load uinput module at boot)
-   - sudo modprobe uinput  (load it now without rebooting)
-   - sudo ln -sf "$(pwd)/kanata.kbd" /etc/xdg/kanata.kbd  (system service reads from here)
+   - sudo ln -sf "$(pwd)/kanata.kbd" /etc/xdg/kanata.kbd
+   - sudo ln -sf "$(pwd)/kanata.service" /etc/systemd/system/kanata.service
+   - sudo systemctl daemon-reload
    - sudo systemctl enable --now kanata
 10. vlc: mkdir -p ~/.config/vlc && cp -r "$(pwd)/vlc/." ~/.config/vlc/
 11. lazygit: mkdir -p ~/.config/lazygit && ln -sf "$(pwd)/lazygit.yml" ~/.config/lazygit/config.yml
