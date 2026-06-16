@@ -1,0 +1,21 @@
+# /home/ramikw/.config/tmuxinator/brainy.yml
+
+name: brainy
+root: ~/
+
+windows:
+  - app:
+      export WEBKIT_DISABLE_DMABUF_RENDERER=1;
+      cd ~/projects/brainy-app;
+      npm run tauri dev
+  - app-editor:
+      export WEBKIT_DISABLE_DMABUF_RENDERER=1;
+      cd ~/projects/brainy-app;
+      nvim
+
+  - backend-editor:
+      cd ~/projects/brainy-backend;
+      nvim
+  - backend-editor:
+      cd ~/projects/brainy-backend/Brainy.WebApi;
+      dotnet watch
