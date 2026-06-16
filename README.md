@@ -15,7 +15,7 @@
    - systemctl --user daemon-reload
    - systemctl --user enable kanata.service
    - systemctl --user start kanata.service
-10. vlc: mkdir -p ~/.config/vlc && cp -r "$(pwd)/vlc/." ~/.config/vlc/
+10. vlc: ln -sf "$(pwd)/vlc" ~/.config/vlc
 11. lazygit: mkdir -p ~/.config/lazygit && ln -sf "$(pwd)/lazygit.yml" ~/.config/lazygit/config.yml
 12. zsh:
    - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
