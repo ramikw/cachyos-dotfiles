@@ -8,10 +8,13 @@
 7. git clone https://github.com/ramikw/neovim-config.git ~/.config/nvim
 8. ln -sf "$(pwd)/gitconfig" ~/.gitconfig
 9. Kanata:
+   - [Add user to permission groups](https://github.com/jtroo/kanata/blob/main/docs/setup-linux.md#instructions)
    - sudo ln -sf "$(pwd)/kanata.kbd" /etc/xdg/kanata.kbd
-   - sudo ln -sf "$(pwd)/kanata.service" /etc/systemd/system/kanata.service
-   - sudo systemctl daemon-reload
-   - sudo systemctl enable kanata
+   - mkdir -p ~/.config/systemd/user
+   - ln -sf "$(pwd)/kanata.service" ~/.config/systemd/user/kanata.service
+   - systemctl --user daemon-reload
+   - systemctl --user enable kanata.service
+   - systemctl --user start kanata.service
 10. vlc: mkdir -p ~/.config/vlc && cp -r "$(pwd)/vlc/." ~/.config/vlc/
 11. lazygit: mkdir -p ~/.config/lazygit && ln -sf "$(pwd)/lazygit.yml" ~/.config/lazygit/config.yml
 12. zsh:
@@ -60,4 +63,4 @@ Todo:
 ### Gaming
 1. To play games in HDR set the following in launch arguments for the game in steam `PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %command%`.
 2. [Disable caching](https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em)
-3. [Increase maximum shader size](https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em)
+3. [Increase maximum shaders size](https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em)

@@ -1,12 +1,13 @@
 [Unit]
-Description=Kanata Service
-Requires=local-fs.target
-After=local-fs.target
+Description=Kanata keyboard remapper
+Documentation=https://github.com/jtroo/kanata
 
 [Service]
-ExecStartPre=/usr/bin/modprobe uinput
+Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
+Type=simple
 ExecStart=/usr/bin/kanata -c /etc/xdg/kanata.kbd
-Restart=no
+Restart=on-failure
+RestartSec=3
 
 [Install]
-WantedBy=sysinit.target
+WantedBy=default.target
