@@ -42,7 +42,7 @@
    - Add kernel param `acpi_osi="!Windows 2015"` to `/etc/default/limine` (`KERNEL_CMDLINE`), then run `sudo limine-update`
 19. Spectacle: `ln -sf "$(pwd)/spectacle/spectaclerc" ~/.config/spectaclerc`
 20. Keyboard shortcuts: `ln -sf "$(pwd)/kglobalshortcuts/kglobalshortcutsrc" ~/.config/kglobalshortcutsrc`
-21. Brave: enable `brave://flags/#middle-button-autoscroll` for middle-click drag to scroll
+21. Brave: enable `brave://flags/#middle-button-autoscroll` for middle-click drag to scroll, enable tabs cycling
 22. Open `shelly` and configure wanted repositories.
 23. `tldr --update`
 
