@@ -41,22 +41,6 @@
 20. Keyboard shortcuts: ln -sf "$(pwd)/kglobalshortcuts/kglobalshortcutsrc" ~/.config/kglobalshortcutsrc
 19. Brave: enable brave://flags/#middle-button-autoscroll for middle-click drag to scroll
 
-Todo:
-1. Learn shortcuts (add to anki)
-
-| Action | Shortcut |
-| --- | --- |
-| Switch to desktop (up/down/left/right) | Ctrl+Meta+Up / Ctrl+Meta+Down / Ctrl+Meta+Left / Ctrl+Meta+Right |
-| Move window to desktop (up/down/left/right) | Ctrl+Meta+Shift+Up / Ctrl+Meta+Shift+Down / Ctrl+Meta+Shift+Left / Ctrl+Meta+Shift+Right |
-| Toggle/Maximize window | Meta+PgUp |
-| Minimize window | Meta+PgDown |
-| Tile window left/right/top/bottom | Meta+Left / Meta+Right / Meta+Up / Meta+Down |
-| Quick launcher (KRunner) | Alt+Space |
-| Screenshot (rectangular region) | Print |
-| Open dolphin | Meta + E |
-| Open konsole | Ctrl + Alt + T |
-| Open browser | Ctrl + Alt + B |
-
 ## Other
 1. To auto mount disks, open KDE Partition Manager, and right click on partition, `Edit Mount Point`, then set the path (e.g. `/mnt/ssd`) and click save.
 
