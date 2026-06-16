@@ -1,3 +1,4 @@
+## Steps on new install
 1. On CachyOS hello, install gaming packages, check profile-sync-daemon
 2. sudo pacman -S yay
 3. yay -Syu
@@ -39,9 +40,7 @@
 
 Todo:
 1. Learn shortcuts (add to anki)
-2. Add shortcut to open browser and terminal, and file explorer
-3. Auto mount SSD and HDD
-5. Enable HDR for all games
+2. Auto mount SSD and HDD
 
 | Action | Shortcut |
 | --- | --- |
@@ -52,3 +51,9 @@ Todo:
 | Tile window left/right/top/bottom | Meta+Left / Meta+Right / Meta+Up / Meta+Down |
 | Quick launcher (KRunner) | Alt+Space |
 | Screenshot (rectangular region) | Print |
+| Open dolphin | Meta + E |
+| Open konsole | Ctrl + Alt + T |
+| Open browser | Ctrl + Alt + B |
+
+## Other
+1. To play games in HDR set the following in launch arguments for the game in steam `PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %command%`.
