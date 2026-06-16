@@ -40,7 +40,6 @@
 
 Todo:
 1. Learn shortcuts (add to anki)
-2. Auto complete paths in zsh
 
 | Action | Shortcut |
 | --- | --- |
