@@ -11,7 +11,7 @@
    - sudo ln -sf "$(pwd)/kanata.kbd" /etc/xdg/kanata.kbd
    - sudo ln -sf "$(pwd)/kanata.service" /etc/systemd/system/kanata.service
    - sudo systemctl daemon-reload
-   - sudo systemctl enable --now kanata
+   - sudo systemctl enable kanata
 10. vlc: mkdir -p ~/.config/vlc && cp -r "$(pwd)/vlc/." ~/.config/vlc/
 11. lazygit: mkdir -p ~/.config/lazygit && ln -sf "$(pwd)/lazygit.yml" ~/.config/lazygit/config.yml
 12. zsh:
@@ -30,7 +30,7 @@
    - start tmux, then press prefix + I (capital i) to install the plugins (sensible, prefix-highlight, better-mouse-mode)
 15. Konsole: ln -sf "$(pwd)/konsole/konsolerc" ~/.config/konsolerc && mkdir -p ~/.local/share/konsole && ln -sf "$(pwd)/konsole/Profile 1.profile" ~/.local/share/konsole/"Profile 1.profile"
 16. Kate: ln -sf "$(pwd)/kate/katerc" ~/.config/katerc
-17. Change virtual desktop layout to two rows with two desktops each
+17. Change virtual desktop layout to two rows with two desktops each in settings -> virtual desktops
 18. Fix sleep (Gigabyte motherboard wakeup issue):
    - sudo ln -sf "$(pwd)/99-sleep-fix.rules" /etc/udev/rules.d/99-sleep-fix.rules && sudo udevadm control --reload
    - Add kernel param `acpi_osi="!Windows 2015"` to /etc/default/limine (KERNEL_CMDLINE), then sudo limine-update
@@ -40,7 +40,7 @@
 
 Todo:
 1. Learn shortcuts (add to anki)
-2. Auto mount SSD and HDD
+2. Auto complete paths in zsh
 
 | Action | Shortcut |
 | --- | --- |
@@ -56,4 +56,9 @@ Todo:
 | Open browser | Ctrl + Alt + B |
 
 ## Other
+1. To auto mount disks, open KDE Partition Manager, and right click on partition, `Edit Mount Point`, then set the path (e.g. `/mnt/ssd`) and click save.
+
+### Gaming
 1. To play games in HDR set the following in launch arguments for the game in steam `PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %command%`.
+2. [Disable caching](https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em)
+3. [Increase maximum shader size](https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em)
