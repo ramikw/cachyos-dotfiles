@@ -43,6 +43,8 @@
 19. Spectacle: `ln -sf "$(pwd)/spectacle/spectaclerc" ~/.config/spectaclerc`
 20. Keyboard shortcuts: `ln -sf "$(pwd)/kglobalshortcuts/kglobalshortcutsrc" ~/.config/kglobalshortcutsrc`
 21. Brave: enable `brave://flags/#middle-button-autoscroll` for middle-click drag to scroll
+22. Open `shelly` and configure wanted repositories.
+23. `tldr --update`
 
 ## Other
 
