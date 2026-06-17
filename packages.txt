@@ -1,5 +1,6 @@
 1password
 anki
+aspnet-targeting-pack
 azure-cli
 brave
 claude-code
