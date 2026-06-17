@@ -4,7 +4,7 @@ switch-to-activity-6225cb7e-6361-422b-9a32-b68e0a25da76=none,none,Switch to acti
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
-Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
+Switch to Next Keyboard Layout=Alt+Shift,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [kaccess]
@@ -268,5 +268,7 @@ toggle do not disturb=,,Toggle do not disturb
 _launch=Ctrl+Alt+B
 
 [services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=
+OpenWithoutScreenshot=
 RectangularRegionScreenShot=Print
 _launch=Meta+Shift+S
