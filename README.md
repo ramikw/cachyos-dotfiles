@@ -59,3 +59,4 @@
 1. To play games in HDR, set the following launch arguments in Steam: `PROTON_ENABLE_WAYLAND=1 PROTON_ENABLE_HDR=1 %command%`
 2. [Disable caching](https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em)
 3. [Increase maximum shaders size](https://wiki.cachyos.org/configuration/gaming/#pre-caching-shaders-with-proton-cachyos--ge-and--em)
+4. Disable pointer acceleration in mouse settings
