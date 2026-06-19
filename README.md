@@ -50,6 +50,8 @@
 
 1. To auto mount disks, open KDE Partition Manager, right-click a partition → `Edit Mount Point`, set the path (e.g. `/mnt/ssd`), and save.
 2. For brainy development run this to setup tmux `mkdir -p ~/.config/tmuxinator && ln -sf "$(pwd)/tmuxinator/brainy.yml" ~/.config/tmuxinator/brainy.yml`
+3. Start `solaar -w hide` on login: `mkdir -p ~/.config/autostart && printf '[Desktop Entry]\nType=Application\nName=Solaar\nExec=solaar -w hide\n' > ~/.config/autostart/solaar.desktop`
+4. Turn off the onboard profile on the mouse (to fix DPI changing on every restart).
 
 ## Laptop
 1. `Invert scroll direction (Natural scrolling)` in settings `Mouse & Touchpad`
