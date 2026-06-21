@@ -17,6 +17,7 @@ hunspell
 hunspell-en_us
 hunspell-nb
 jdk-openjdk
+kalk
 kanata
 kclock
 lazygit
