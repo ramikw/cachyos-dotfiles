@@ -16,6 +16,6 @@ windows:
   - backend-editor:
       cd ~/projects/brainy-backend;
       nvim
-  - backend-editor:
+  - backend:
       cd ~/projects/brainy-backend/Brainy.WebApi;
       dotnet watch
