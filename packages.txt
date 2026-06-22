@@ -32,8 +32,8 @@ postman
 protols
 ripgrep
 roslyn-ls
-rust
 rust-analyzer
+rustup
 shelly
 solaar
 sqlite

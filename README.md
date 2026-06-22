@@ -45,6 +45,7 @@
 21. Brave: enable `brave://flags/#middle-button-autoscroll` for middle-click drag to scroll, enable tabs cycling
 22. Open `shelly` and configure wanted repositories.
 23. `tldr --update`
+24. `rustup default stable`
 
 ## Other
 
