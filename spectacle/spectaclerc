@@ -1,3 +1,7 @@
+[General]
+clipboardGroup=PostScreenshotCopyImage
+ocrLanguages=afr
+
 [ImageSave]
 translatedScreenshotsFolder=Screenshots
 
