@@ -1,0 +1,13 @@
+# /home/ramikw/.config/tmuxinator/amber.yml
+
+name: amber
+root: ~/
+
+windows:
+  - app:
+      cd ~/projects/amber;
+      npm run tauri dev -- -- -- --no-sandbox --no-zygote
+  - app-editor:
+      cd ~/projects/amber;
+      nvim
+
