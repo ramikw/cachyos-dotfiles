@@ -6,8 +6,15 @@ root: ~/
 windows:
   - app:
       cd ~/projects/amber;
-      npm run tauri dev -- -- -- --no-sandbox --no-zygote
+      npm run tauri dev
   - app-editor:
       cd ~/projects/amber;
       nvim
+  - backend-editor:
+      cd ~/projects/amber-backend;
+      nvim
+  - backend-editor:
+      cd ~/projects/amber-backend/Amber.WebApi;
+      docker compose -f ../docker-compose.local.yml up -d;
+      dotnet watch
 
