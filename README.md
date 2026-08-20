@@ -47,6 +47,9 @@
 23. `tldr --update`
 24. `rustup defaultstable`
 25. Go to settings, find `Task switcher` and set `Thumbnail Grid`.
+26. Zed (symlinks aren't supported, copy the files instead):
+   - `mkdir -p ~/.config/zed && cp "$(pwd)/zed/settings.json" ~/.config/zed/settings.json`
+   - `cp "$(pwd)/zed/keymap.json" ~/.config/zed/keymap.json`
 
 ## Other
 
