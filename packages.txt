@@ -45,6 +45,7 @@ ttf-hack-nerd
 unzip
 visual-studio-code-bin
 vlc
+watchman-bin
 wl-clipboard
 zsh
 zsh-autosuggestions
