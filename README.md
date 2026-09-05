@@ -29,12 +29,11 @@
    - Restart shell and run `p10k configure` to generate `~/.config/zsh/.p10k.zsh`
 13. Limine: open `/boot/limine.conf` with `sudo -E -s nvim /boot/limine.conf` and set `timeout: 0` at the top to skip the boot menu delay
 14. tmux:
-   - `mkdir -p ~/.config/tmux && ln -sf "$(pwd)/tmux.conf" ~/.config/tmux/tmux.conf`
+   - `mkdir -p ~/.config/tmux && ln -sf "$(pwd)/tmux/tmux.conf" ~/.config/tmux/tmux.conf`
+   - `ln -sf "$(pwd)/tmux/tmux-cpu-usage.sh" ~/.config/tmux/tmux-cpu-usage.sh`
    - `git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm`
    - Start tmux, then press `prefix + I` to install plugins (sensible, prefix-highlight, better-mouse-mode)
-15. Konsole:
-   - `ln -sf "$(pwd)/konsole/konsolerc" ~/.config/konsolerc`
-   - `mkdir -p ~/.local/share/konsole && ln -sf "$(pwd)/konsole/Profile 1.profile" ~/.local/share/konsole/"Profile 1.profile"`
+15. Alacritty: `mkdir -p ~/.config/alacritty && ln -sf "$(pwd)/alacritty/alacritty.toml" ~/.config/alacritty/alacritty.toml`
 16. Kate: `ln -sf "$(pwd)/kate/katerc" ~/.config/katerc`
 17. Change virtual desktop layout to two rows with two desktops each in Settings → Virtual Desktops
 18. Fix sleep (Gigabyte motherboard wakeup issue):
@@ -47,9 +46,6 @@
 23. `tldr --update`
 24. `rustup defaultstable`
 25. Go to settings, find `Task switcher` and set `Thumbnail Grid`.
-26. Zed (symlinks aren't supported, copy the files instead):
-   - `mkdir -p ~/.config/zed && cp "$(pwd)/zed/settings.json" ~/.config/zed/settings.json`
-   - `cp "$(pwd)/zed/keymap.json" ~/.config/zed/keymap.json`
 
 ## Other
 
@@ -57,6 +53,13 @@
 2. For amber development run this to setup tmux `mkdir -p ~/.config/tmuxinator && ln -sf "$(pwd)/tmuxinator/amber.yml" ~/.config/tmuxinator/amber.yml`
 3. Start `solaar -w hide` on login: `mkdir -p ~/.config/autostart && printf '[Desktop Entry]\nType=Application\nName=Solaar\nExec=solaar -w hide\n' > ~/.config/autostart/solaar.desktop`
 4. Turn off the onboard profile on the mouse (to fix DPI changing on every restart).
+5. Updating the lazygit theme after changing the Neovim colorscheme: snacks.nvim regenerates
+   `~/.cache/nvim/lazygit-theme.yml` from the active colorscheme (only used when lazygit is opened
+   from inside Neovim). To make standalone lazygit match, copy its 9 colors into the `gui.theme`
+   block of `lazygit.yml`. The 3 keys snacks doesn't emit
+   (`inactiveViewSelectedLineBgColor`, `markedBaseCommitFgColor`, `markedBaseCommitBgColor`)
+   have to be picked by hand. View the generated colors with:
+   `cat ~/.cache/nvim/lazygit-theme.yml`
 
 ## Laptop
 1. `Invert scroll direction (Natural scrolling)` in settings `Mouse & Touchpad`

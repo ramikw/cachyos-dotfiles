@@ -7,14 +7,31 @@
 
 [core]
 	askpass =
+	pager = delta
 
 [interactive]
 	diffFilter = delta --color-only
 
 [delta]
 	line-numbers = true
-	paging = never
+	paging = auto
 	dark = true
+	true-color = always
 	syntax-theme = Visual Studio Dark+
-	side-by-side = true
-	hyprlinks = true
+	hyperlinks = true
+
+	# Diff colors matched to the shared palette (see alacritty/alacritty.toml)
+	minus-style = syntax "#3a2a2d"
+	minus-emph-style = syntax "#52353a"
+	plus-style = syntax "#2a3327"
+	plus-emph-style = syntax "#3c4a35"
+	line-numbers-minus-style = "#de5d68"
+	line-numbers-plus-style = "#8fb573"
+	line-numbers-zero-style = "#5a5b5e"
+	line-numbers-left-style = "#5a5b5e"
+	line-numbers-right-style = "#5a5b5e"
+	file-style = "#57a5e5" bold
+	file-decoration-style = "#35363b" ul
+	hunk-header-style = file line-number syntax
+	hunk-header-decoration-style = "#35363b" box
+	features = side-by-side

@@ -269,9 +269,17 @@ switch to next activity=none,none,Switch to Next Activity
 switch to previous activity=none,none,Switch to Previous Activity
 toggle do not disturb=none,none,Toggle do not disturb
 
+[services][Alacritty.desktop]
+_launch=Ctrl+Alt+T
+
 [services][net.local.brave.desktop]
 _launch=Meta+B
 
+[services][org.kde.konsole.desktop]
+_launch=none
+
 [services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
 RectangularRegionScreenShot=Print
 _launch=Meta+Shift+S
