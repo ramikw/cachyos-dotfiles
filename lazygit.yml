@@ -42,8 +42,8 @@ git:
     - type: stdinFilter
       name: delta
       colorArg: always
-      command: delta --features=
+      command: delta --paging=never --features=
     - type: stdinFilter
       name: delta side-by-side
       colorArg: always
-      command: delta
+      command: delta --paging=never
