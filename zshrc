@@ -45,3 +45,6 @@ bindkey '^ ' autosuggest-accept # ctrl + space
 
 # Environment variables
 export EDITOR="nvim"
+
+# PATH additions
+export PATH="$HOME/.dotnet/tools:$PATH"
