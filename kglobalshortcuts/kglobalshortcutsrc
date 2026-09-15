@@ -9,6 +9,11 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=Alt+Shift,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[com.onepassword.OnePassword]
+B76FB962D3B0A814099C3E1750E0968D-=none,none,1Password shortcut:\s
+D9DA92C8A42920E472AC373DD53C42D0-Ctrl+Shift+Space=none,Ctrl+Shift+Space,1Password shortcut: Ctrl+Shift+Space
+_k_friendly_name=1Password
+
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -279,5 +284,7 @@ _launch=Meta+B
 _launch=none
 
 [services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
 RectangularRegionScreenShot=Print
 _launch=Meta+Shift+S
