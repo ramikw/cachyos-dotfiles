@@ -13,7 +13,7 @@ windows:
   - backend-editor:
       cd ~/projects/amber-backend;
       nvim
-  - backend-editor:
+  - backend:
       cd ~/projects/amber-backend/Amber.WebApi;
       docker compose -f ../docker-compose.local.yml up -d;
       dotnet watch
