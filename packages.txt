@@ -43,6 +43,7 @@ thunderbird
 tmux
 tmuxinator
 ttf-hack-nerd
+ttf-intone-nerd
 unzip
 visual-studio-code-bin
 vlc

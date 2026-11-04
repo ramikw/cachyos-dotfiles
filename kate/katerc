@@ -94,7 +94,7 @@ Color Theme=Breeze Dark
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
-Text Font=Hack Nerd Font Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+Text Font=IntoneMono Nerd Font Mono,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 Text Font Features=
 Word Wrap Marker=false
 
@@ -173,7 +173,7 @@ SetEditor=false
 
 [MainWindow]
 2 screens: Height=909
-2 screens: Width=1080
+2 screens: Width=1678
 2560x1440 screen: Height=936
 2560x1440 screen: Width=1477
 

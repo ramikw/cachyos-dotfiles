@@ -52,19 +52,19 @@ white = "0xa7aab0"
 size = 14
 
 [font.normal]
-family = "Hack Nerd Font"
+family = "IntoneMono Nerd Font"
 style = "Regular"
 
 [font.bold]
-family = "Hack Nerd Font"
+family = "IntoneMono Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "Hack Nerd Font"
+family = "IntoneMono Nerd Font"
 style = "Italic"
 
 [font.bold_italic]
-family = "Hack Nerd Font"
+family = "IntoneMono Nerd Font"
 style = "Bold Italic"
 
 [selection]
