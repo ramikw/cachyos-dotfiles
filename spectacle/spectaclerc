@@ -3,7 +3,12 @@ clipboardGroup=PostScreenshotCopyImage
 ocrLanguages=afr
 
 [ImageSave]
+lastImageSaveLocation=file:///home/ramikw/Pictures/Screenshots/Screenshot_20260916_182601.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
 translatedScreencastsFolder=Screencasts
+
+[ViewerWindow]
+2 screens: Height=570
+2 screens: Width=814
