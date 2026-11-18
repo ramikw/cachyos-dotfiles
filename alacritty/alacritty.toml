@@ -25,28 +25,28 @@ multiplier = 3
 draw_bold_text_with_bright_colors = true
 
 [colors.primary]
-background = "0x232326"
-foreground = "0xa7aab0"
+background = "0x282828"
+foreground = "0xe2cca9"
 
 [colors.normal]
-black = "0x101012"
-red = "0xde5d68"
-green = "0x8fb573"
-yellow = "0xdbb671"
-blue = "0x57a5e5"
-magenta = "0xbb70d2"
-cyan = "0x51a8b3"
-white = "0xa7aab0"
+black = "0x3c3836"
+red = "0xf2594b"
+green = "0xb0b846"
+yellow = "0xe9b143"
+blue = "0x80aa9e"
+magenta = "0xd3869b"
+cyan = "0x8bba7f"
+white = "0xe2cca9"
 
 [colors.bright]
-black = "0x818387"
-red = "0xde5d68"
-green = "0x8fb573"
-yellow = "0xdbb671"
-blue = "0x57a5e5"
-magenta = "0xbb70d2"
-cyan = "0x51a8b3"
-white = "0xa7aab0"
+black = "0x928374"
+red = "0xf2594b"
+green = "0xb0b846"
+yellow = "0xe9b143"
+blue = "0x80aa9e"
+magenta = "0xd3869b"
+cyan = "0x8bba7f"
+white = "0xe2cca9"
 
 [font]
 size = 14
