@@ -26,7 +26,7 @@
    - `mkdir -p ~/.config/zsh && ln -sf "$(pwd)/zshrc" ~/.config/zsh/.zshrc`
    - `echo 'export ZDOTDIR="$HOME/.config/zsh"' > ~/.zshenv` (so zsh reads `.zshrc` from `~/.config/zsh`)
    - `chsh -s $(which zsh)` (make zsh the default shell)
-   - Restart shell and run `p10k configure` to generate `~/.config/zsh/.p10k.zsh`
+   - `ln -sf "$(pwd)/p10k.zsh" ~/.p10k.zsh` (gruvbox-material colors; re-running `p10k configure` overwrites them)
 13. Limine: open `/boot/limine.conf` with `sudo -E -s nvim /boot/limine.conf` and set `timeout: 0` at the top to skip the boot menu delay
 14. tmux:
    - `mkdir -p ~/.config/tmux && ln -sf "$(pwd)/tmux/tmux.conf" ~/.config/tmux/tmux.conf`
